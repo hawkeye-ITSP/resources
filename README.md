@@ -6,6 +6,8 @@
 
 [A gentle introduction to OCR - Towards Data Science](https://towardsdatascience.com/a-gentle-introduction-to-ocr-ee1469a201aa)
 
+[OCR wit Python, OpenCV and pyTesseract - Medium](https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866)
+
 #### PyTorch
 
 [Object detection/segmentation using PyTorch](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/)
