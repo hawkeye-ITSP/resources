@@ -1,27 +1,67 @@
 # Resources
 
-[OpenCV python tutorial - GeekforGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/)
+* [OpenCV python tutorial - GeekforGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/)
 
-[CRNN (CNN+RNN)](https://github.com/qjadud1994/CRNN-Keras)
+* [CRNN (CNN+RNN)](https://github.com/qjadud1994/CRNN-Keras)
 
-[A gentle introduction to OCR - Towards Data Science](https://towardsdatascience.com/a-gentle-introduction-to-ocr-ee1469a201aa)
+* [A gentle introduction to OCR - Towards Data Science](https://towardsdatascience.com/a-gentle-introduction-to-ocr-ee1469a201aa)
 
-[OCR wit Python, OpenCV and pyTesseract - Medium](https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866)
+* [OCR wit Python, OpenCV and pyTesseract - Medium](https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866)
 
-[Neural Network Playground](https://playground.tensorflow.org/) - Great website for visualising Neural Networks
+* [Neural Network Playground](https://playground.tensorflow.org/) - Great website for visualising Neural Networks
 
-### PyTorch
+#### Dropout
 
-[Object detection/segmentation using PyTorch](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/) - Detectron2 library (Facebook AI)
+Dropout is a regularization technique that “drops out” or “deactivates” few neurons in the neural network randomly in order to avoid the problem of over-fitting.
 
-[PyTorch Tutorials](https://pytorch.org/tutorials/) - Official PyTorch Tutorial
+Dropout deactivates the neurons randomly at each training step instead of training the data on the original network, we train the data on the network with dropped out nodes. In the next iteration of the training step, the hidden neurons which are deactivated by dropout changes because of its probabilistic behavior. In this way, by applying dropout i.e deactivating certain individual nodes at random during training we can simulate an ensemble of neural network with different architectures.
 
-[PyTorch for Deep Learning and Computer Vision - Udemy](https://www.udemy.com/course/pytorch-for-deep-learning-and-computer-vision/?LSNPUBID=QhjctqYUCD0&ranEAID=QhjctqYUCD0&ranMID=39197&ranSiteID=QhjctqYUCD0-1hYZOGjDH3dISFFHX6uK7g)
+*Dropout roughly doubles the number of iterations required to converge. However, training time for each epoch is less.*
 
-[Linear Regression with PyTorch - Medium](https://medium.com/learn-the-part/linear-regression-with-pytorch-ac8f163a14f) - Code: [Linear Regression](https://github.com/hawkeye-ITSP/resources/blob/master/Implementation_PyTorch/Linear_Regression.ipynb)
+```python
+#create a neural network with out dropout
+N_h = 100 #hidden nodes
 
-### References
+model = torch.nn.Sequential(
+    nn.Linear(1, N_h),
+    nn.ReLU(),
+    nn.Linear(N_h, N_h),
+    nn.ReLU(),
+    nn.Linear(N_h, 1)
+)
 
-[Image to LaTeX - report, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-reports/5243453.pdf)
+#create a network with dropout
+model_dropout = nn.Sequential(
+    # Input Layer
+    nn.Linear(1, N_h),
+    nn.Dropout(0.5), # 50 % probability of dropping nodes in the 1st layer 
+    nn.ReLU(),
 
-[Image to LaTeX - poster, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-posters/5140564.pdf)
+    # Hidden Layer
+    torch.nn.Linear(N_h, N_h),
+    torch.nn.Dropout(0.2), # 20% probability of dropping nodes in the 2nd layer
+    torch.nn.ReLU(),
+    
+    torch.nn.Linear(N_h, 1),
+)
+```
+
+* [Dropout in Deep Learning - Medium](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) : Check [this](https://github.com/budhiraja/DeepLearningExperiments/blob/master/Dropout%20Analysis%20for%20Deep%20Nets/Dropout%2BAnalysis.ipynb) for implementation.
+
+* [Batch Normalization and Dropout in Neural Networks with Pytorch](https://towardsdatascience.com/batch-normalization-and-dropout-in-neural-networks-explained-with-pytorch-47d7a8459bcd) Dropout section of the article.
+
+## PyTorch 
+
+* [Object detection/segmentation using PyTorch](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/) - Detectron2 library (Facebook AI)
+
+* [PyTorch Tutorials](https://pytorch.org/tutorials/) - Official PyTorch Tutorial
+
+* [PyTorch for Deep Learning and Computer Vision - Udemy](https://www.udemy.com/course/pytorch-for-deep-learning-and-computer-vision/?LSNPUBID=QhjctqYUCD0&ranEAID=QhjctqYUCD0&ranMID=39197&ranSiteID=QhjctqYUCD0-1hYZOGjDH3dISFFHX6uK7g)
+
+* [Linear Regression with PyTorch - Medium](https://medium.com/learn-the-part/linear-regression-with-pytorch-ac8f163a14f) - Code: [Linear Regression](https://github.com/hawkeye-ITSP/resources/blob/master/Implementation_PyTorch/Linear_Regression.ipynb)
+
+## References
+
+* [Image to LaTeX - report, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-reports/5243453.pdf)
+
+* [Image to LaTeX - poster, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-posters/5140564.pdf)
