@@ -10,7 +10,7 @@
 
 * [Neural Network Playground](https://playground.tensorflow.org/) - Great website for visualising Neural Networks
 
-#### Dropout
+### Dropout
 
 Dropout is a regularization technique that “drops out” or “deactivates” few neurons in the neural network randomly in order to avoid the problem of over-fitting.
 
