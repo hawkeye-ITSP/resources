@@ -1,18 +1,20 @@
 # Resources
 
-* [OpenCV python tutorial - GeekforGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/)
+* [x] [OpenCV python tutorial - GeekforGeeks](https://www.geeksforgeeks.org/opencv-python-tutorial/)
 
-* [CRNN (CNN+RNN)](https://github.com/qjadud1994/CRNN-Keras)
+* [x] [CRNN (CNN+RNN)](https://github.com/qjadud1994/CRNN-Keras)
 
-* [A gentle introduction to OCR - Towards Data Science](https://towardsdatascience.com/a-gentle-introduction-to-ocr-ee1469a201aa)
+* [x] [A gentle introduction to OCR - Towards Data Science](https://towardsdatascience.com/a-gentle-introduction-to-ocr-ee1469a201aa)
 
-* [OCR wit Python, OpenCV and pyTesseract - Medium](https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866)
+* [x] [OCR wit Python, OpenCV and pyTesseract - Medium](https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866)
 
-* [Neural Network Playground](https://playground.tensorflow.org/) - Great website for visualising Neural Networks
+* [ ] [Neural Network Playground](https://playground.tensorflow.org/) - Great website for visualising Neural Networks
 
-* [Loss functions in PyTorch](https://medium.com/udacity-pytorch-challengers/a-brief-overview-of-loss-functions-in-pytorch-c0ddb78068f7)
+* [ ] [Loss functions in PyTorch](https://medium.com/udacity-pytorch-challengers/a-brief-overview-of-loss-functions-in-pytorch-c0ddb78068f7)
 
 ### Dropout
+
+<details><summary>Dropout is a . . .</summary>
 
 Dropout is a regularization technique that “drops out” or “deactivates” few neurons in the neural network randomly in order to avoid the problem of over-fitting.
 
@@ -46,24 +48,26 @@ model_dropout = nn.Sequential(
     
     torch.nn.Linear(N_h, 1),
 )
-```
+```    `
+</details>
 
-* [Dropout in Deep Learning - Medium](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) : Check [this](https://github.com/budhiraja/DeepLearningExperiments/blob/master/Dropout%20Analysis%20for%20Deep%20Nets/Dropout%2BAnalysis.ipynb) for implementation.
 
-* [Batch Normalization and Dropout in Neural Networks with Pytorch](https://towardsdatascience.com/batch-normalization-and-dropout-in-neural-networks-explained-with-pytorch-47d7a8459bcd) Dropout section of the article.
+* [ ] [Dropout in Deep Learning - Medium](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5) : Check [this](https://github.com/budhiraja/DeepLearningExperiments/blob/master/Dropout%20Analysis%20for%20Deep%20Nets/Dropout%2BAnalysis.ipynb) for implementation.
+
+* [ ] [Batch Normalization and Dropout in Neural Networks with Pytorch](https://towardsdatascience.com/batch-normalization-and-dropout-in-neural-networks-explained-with-pytorch-47d7a8459bcd) Dropout section of the article.
 
 ## PyTorch 
 
-* [Object detection/segmentation using PyTorch](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/) - Detectron2 library (Facebook AI)
+* [ ] [Object detection/segmentation using PyTorch](https://ai.facebook.com/blog/-detectron2-a-pytorch-based-modular-object-detection-library-/) - Detectron2 library (Facebook AI)
 
-* [PyTorch Tutorials](https://pytorch.org/tutorials/) - Official PyTorch Tutorial
+* [ ] [PyTorch Tutorials](https://pytorch.org/tutorials/) - Official PyTorch Tutorial
 
-* [PyTorch for Deep Learning and Computer Vision - Udemy](https://www.udemy.com/course/pytorch-for-deep-learning-and-computer-vision/?LSNPUBID=QhjctqYUCD0&ranEAID=QhjctqYUCD0&ranMID=39197&ranSiteID=QhjctqYUCD0-1hYZOGjDH3dISFFHX6uK7g)
+* [ ] [PyTorch for Deep Learning and Computer Vision - Udemy](https://www.udemy.com/course/pytorch-for-deep-learning-and-computer-vision/?LSNPUBID=QhjctqYUCD0&ranEAID=QhjctqYUCD0&ranMID=39197&ranSiteID=QhjctqYUCD0-1hYZOGjDH3dISFFHX6uK7g)
 
-* [Linear Regression with PyTorch - Medium](https://medium.com/learn-the-part/linear-regression-with-pytorch-ac8f163a14f) - Code: [Linear Regression](https://github.com/hawkeye-ITSP/resources/blob/master/Implementation_PyTorch/Linear_Regression.ipynb)
+* [x] [Linear Regression with PyTorch - Medium](https://medium.com/learn-the-part/linear-regression-with-pytorch-ac8f163a14f) - Code: [Linear Regression](https://github.com/hawkeye-ITSP/resources/blob/master/Implementation_PyTorch/Linear_Regression.ipynb)
 
 ## References
 
-* [Image to LaTeX - report, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-reports/5243453.pdf)
+* [x] [Image to LaTeX - report, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-reports/5243453.pdf)
 
-* [Image to LaTeX - poster, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-posters/5140564.pdf)
+* [x] [Image to LaTeX - poster, CS229 Stanford](http://cs229.stanford.edu/proj2017/final-posters/5140564.pdf)
