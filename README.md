@@ -48,7 +48,7 @@ model_dropout = nn.Sequential(
     
     torch.nn.Linear(N_h, 1),
 )
-```    `
+```
 </details>
 
 
