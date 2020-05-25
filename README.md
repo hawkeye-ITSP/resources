@@ -12,6 +12,8 @@
 
 * [ ] [Loss functions in PyTorch](https://medium.com/udacity-pytorch-challengers/a-brief-overview-of-loss-functions-in-pytorch-c0ddb78068f7)
 
+* [ ] [Image to Latex - Luopeixiang - Github](https://github.com/luopeixiang/im2latex)
+
 ### Dropout
 
 <details><summary>Dropout is a . . .</summary>
