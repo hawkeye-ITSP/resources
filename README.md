@@ -14,6 +14,8 @@
 
 * [ ] [Image to Latex - Luopeixiang - Github](https://github.com/luopeixiang/im2latex)
 
+* [ ] [im2markup - Harvard NLP - Github](https://github.com/harvardnlp/im2markup)
+
 ### Dropout
 
 <details><summary>Dropout is a . . .</summary>
