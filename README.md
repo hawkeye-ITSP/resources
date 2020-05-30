@@ -16,6 +16,8 @@
 
 * [ ] [im2markup - Harvard NLP - Github](https://github.com/harvardnlp/im2markup)
 
+* [ ] [Permute vs Transpose vs View in PyTorch](https://discuss.pytorch.org/t/different-between-permute-transpose-view-which-should-i-use/32916)
+
 ### Dropout
 
 <details><summary>Dropout is a . . .</summary>
